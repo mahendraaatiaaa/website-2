@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset margin dan padding untuk body dan html */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Membuat body dan html memiliki tinggi 100% dari viewport */
+}
+
+/* Styling untuk elemen dengan class .all */
+.all {
+    background: url('./Food.png'), linear-gradient(to bottom, #7ABCDE, #0072B8); /* Gambar di bawah dan gradien di atas */
+    background-size: cover; /* Membuat gambar latar belakang menutupi seluruh area */
+    background-position: center; /* Menyelaraskan gambar ke tengah */
+    font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins */
+    color: white; /* Warna teks putih */
+    text-align: center; /* Menyelaraskan teks ke tengah */
+    width: 100%; /* Lebar 100% dari viewport */
+    height: 100%; /* Tinggi 100% dari viewport */
+    display: flex;
+    justify-content: center; /* Menyelaraskan konten di tengah secara horizontal */
+    align-items: center; /* Menyelaraskan konten di tengah secara vertikal */
+    box-sizing: border-box; /* Menjaga elemen tetap pas di layar */
+    font-size: 12px;
+}
+
+.box {
+    background-color: rgba(0, 114, 184, 0.8);
+    border-radius: 30px;
+    width: 80vw;
+    height: 80vh;
+    padding: 20px;
+    overflow-y: auto; /* Menambahkan scroll jika konten lebih besar dari box */
+}
+
+/* Styling untuk kotak foto yang diupload */
+.image-container {
+    margin: 20px auto;
+    width: 50%;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+/* Styling untuk hasil klasifikasi buah */
+.results {
+    margin-top: 20px;
+}
+
+.result {
+    color: black; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.7); /* Slight background color for separation */
+    border-radius: 10px;
+}
+
+.result span {
+    flex: 1;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.bar-container {
+    color: black; 
+    width: 50%;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    height: 20px;
+    margin: 0 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center; /* Vertically center the progress bar */
+}
+
+.bar {
+    height: 100%;
+    background-color: #FCDC00;
+    border-radius: 10px;
+}
+
+.result span:last-child {
+    text-align: right;
+    padding-right: 10px;
+}
+
+#imageUpload {
+    border-radius: 10px; /* Membuat border radius 10px */
+    background-color: #FCDC00; /* Mengatur background color menjadi FCDC00 */
+    font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins */
+    font-size: 12px; /* Ukuran font 12px */
+    padding: 10px; /* Menambahkan padding agar lebih mudah terlihat */
+    cursor: pointer; /* Menambahkan pointer untuk memperlihatkan elemen dapat diklik */
+    border: none; /* Menghilangkan border default */
+    outline: none; /* Menghilangkan outline saat fokus */
+    color: black;
+}
+
+/* Menambahkan styling untuk elemen input ketika di hover */
+#imageUpload:hover {
+    background-color: #fbbf00; /* Mengubah warna latar belakang saat hover */
+}
+
